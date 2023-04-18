@@ -135,6 +135,7 @@ class BaseForm(RenderableFormMixin):
         fields in field_order to allow disabling fields in form subclasses
         without redefining ordering.
         """
+        print("IN ORDER_FIELDS")
         if field_order is None:
             return
         fields = {}
